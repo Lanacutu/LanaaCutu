@@ -1,0 +1,96 @@
+body {
+  background-color: #fceff1; /* Soft pink background */
+  font-family: 'Quicksand', sans-serif; /* Beautiful and cute font */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#quiz-container, #mumbai-container {
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#question-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.option {
+  background-color: #ffd3d8; /* Light pink for answer options */
+  color: #464646;
+  font-size: 18px;
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #ffb3ba; /* Slightly darker pink on hover for options */
+}
+
+#answer-popup, #missed-popup, #mumbai-popup {
+  text-align: center;
+  background-color: #ffd3d8; /* Light pink for popups */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#answer-popup button, #missed-popup button, #mumbai-popup button {
+  background-color: #ff8c94; /* Coral color for buttons */
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#answer-popup button:hover, #missed-popup button:hover, #mumbai-popup button:hover {
+  background-color: #e6616b; /* Lighter coral on hover for buttons */
+}
+
+#mumbai-popup button#yes-button-mumbai:hover {
+  background-color: #ff4d52; /* Lighter red on hover for 'Yes' button */
+}
+
+#options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mumbai-question {
+  color: #ff4d52; /* Coral color for the mumbai question */
+  font-size: 28px;
+}
+
+#no-button-mumbai {
+  position: absolute;
+  font-size: 24px;
+  color: #ff4d52; /* Coral color for 'No' button */
+  transform: rotate(-20deg);
+}
+
+#no-button-mumbai:hover {
+  color: #ff666e; /* Lighter coral on hover for 'No' button */
+}
+
+#heart-icon {
+  color: #ff4d52; /* Coral color for heart icon */
+  font-size: 24px;
+  margin-right: 5px;
+}
+
